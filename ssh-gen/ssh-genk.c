@@ -241,7 +241,6 @@ int main(int argc, char const *argv[])
 
 	sprintf(ssh_cmd, "ssh-keygen -t rsa -b %d -P \"%s\" -C \"%s\" -f \"%s/%s\"", 
 						ckey, member.passphrase, member.email, path_folder, member.hostname);
-
 	system(ssh_cmd);
 	return 0;
 }
