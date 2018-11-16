@@ -192,7 +192,6 @@ int main(int argc, char const *argv[])
 	printf("===================================\n");
 
 	char user_login[20];
-	char test[20];
 	char ssh_cmd[max_path] = "";
 	FILE *file;
 
