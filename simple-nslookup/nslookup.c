@@ -57,6 +57,8 @@ void nslookup(char const *domain)
             struct sockaddr_in6 *ipv6 = (struct sockaddr_in6 *)p->ai_addr;
             addr = &(ipv6->sin6_addr);
         }
+        
+        // convert the IP to a string and print it
         inet_ntop(p->ai_family, addr, ipstr, sizeof(ipstr));
         printf("Name:\t%s\n", domain);
         printf("Address: %s\n", ipstr);
